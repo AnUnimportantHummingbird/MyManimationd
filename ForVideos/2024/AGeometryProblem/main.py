@@ -22,7 +22,7 @@ class ThumbNail(Scene):
         
         # Side Length
         M = Point(side.get_midpoint())
-        slength = Tex("12").next_to(side)
+        slength = Tex("12").move_to(2*LEFT)
 
         # Quarter Circles
         A1 = ArcBetweenPoints(s.get_vertices()[0], s.get_vertices()[2])
