@@ -6,7 +6,7 @@ class ThumbNail(Scene):
         s = Square().scale(2)
 
         # Length of a side of a square
-        side = Line(s.get_vertices()[0], s.get_vertices()[1])
+        side = Line(s.get_vertices()[1], s.get_vertices()[2])
 
         # Makes a point on each of the verticies
         VertA = Point(s.get_vertices()[2])
@@ -21,7 +21,8 @@ class ThumbNail(Scene):
         D = Tex("D").next_to(VertD, LEFT)
         
         # Side Length
-        M = Point(Line)
+        M = Point(side.get_midpoint())
+        slength = Tex("12").next_to(side)
 
         # Quarter Circles
         A1 = ArcBetweenPoints(s.get_vertices()[0], s.get_vertices()[2])
@@ -43,4 +44,4 @@ class ThumbNail(Scene):
 
         self.add(VGroup(s, A1, A2, A3, A4))
         self.add(ShadedArea, q)
-        self.add(A, B, C, D)
+        self.add(A, B, C, D, slength)
