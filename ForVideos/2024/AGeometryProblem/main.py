@@ -49,7 +49,10 @@ class ThumbNail(Scene):
 
 class ProblemInfo(Scene):
     def construct(self):
-        s = Square().scale(1)
+        scale = 1
+
+
+        s = Square().scale(scale)
 
         # Length of a side of a square
         side = Line(s.get_vertices()[2], s.get_vertices()[3])
@@ -61,10 +64,10 @@ class ProblemInfo(Scene):
         VertD = Point(s.get_vertices()[1])
 
         # Label for each of the verticies
-        A = Tex("A").next_to(VertA, LEFT)
-        B = Tex("B").next_to(VertB, RIGHT)
-        C = Tex("C").next_to(VertC, RIGHT)
-        D = Tex("D").next_to(VertD, LEFT)
+        A = Tex("A").next_to(VertA, 0.5*LEFT).scale(scale/2)
+        B = Tex("B").next_to(VertB, 0.5*RIGHT).scale(scale/2)
+        C = Tex("C").next_to(VertC, 0.5*RIGHT).scale(scale/2)
+        D = Tex("D").next_to(VertD, 0.5*LEFT).scale(scale/2)
         
         # Side Length
         M = Point(side.get_midpoint())
@@ -86,7 +89,7 @@ class ProblemInfo(Scene):
         ShadedArea = Intersection(A1mob, A2mob, A3mob, A4mob, color = WHITE, fill_opacity = 0.5)
 
         # Problem
-        problem = Tex("Quarter circles are drawn centered at each vertex of \square ABCD").to_edge(UP, buff=2)
+        problem = Tex("Quarter circles are drawn centered at each vertex of square ABCD").to_edge(UP, buff=2)
 
 
         self.play(Create(s))
@@ -96,4 +99,4 @@ class ProblemInfo(Scene):
         self.play(Write(B, run_time=0.5))
         self.play(Write(C, run_time=0.5))
         self.play(Write(D, run_time=0.5))
-        self.play(Write(Tex))
+        self.play(Write(problem))
