@@ -93,6 +93,9 @@ class ProblemInfo(Scene):
         #* Title
         info = Tex("Problem Information").to_edge(UP, buff=0.25)
 
+        #! Subject
+        subject = Tex("Subject: \nGeometry").to_edge(RIGHT, buff=0.5).move_to(2*UP)
+
         #* Problem
         problem = Tex(
         """Quarter circles are drawn centered at each vertex of square ABCD.
@@ -102,10 +105,11 @@ class ProblemInfo(Scene):
 
         self.play(Write(info))
         self.play(Write(problem))
+        self.play(Write(subject))
         self.play(Create(s))
-        self.play(Create(VGroup(A1, A2, A3, A4)))
+        self.play(Create(A1), Create(A2), Create(A3), Create(A4))
         self.play(Create(ShadedArea))
         self.play(Write(A, run_time=0.5))
         self.play(Write(B, run_time=0.5))
         self.play(Write(C, run_time=0.5))
-        self.play(Write(D, run_time=0.5)) # Animation #8
+        self.play(Write(D, run_time=0.5)) # Animation #9
