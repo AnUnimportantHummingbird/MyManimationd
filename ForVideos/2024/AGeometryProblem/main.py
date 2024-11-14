@@ -85,6 +85,10 @@ class ProblemInfo(Scene):
         # Shaded Area
         ShadedArea = Intersection(A1mob, A2mob, A3mob, A4mob, color = WHITE, fill_opacity = 0.5)
 
+        # Problem
+        problem = Tex("Quarter circles are drawn centered at each vertex of \square ABCD").to_edge(UP, buff=2)
+
+
         self.play(Create(s))
         self.play(Create(VGroup(A1, A2, A3, A4)))
         self.play(Create(ShadedArea))
@@ -92,3 +96,4 @@ class ProblemInfo(Scene):
         self.play(Write(B, run_time=0.5))
         self.play(Write(C, run_time=0.5))
         self.play(Write(D, run_time=0.5))
+        self.play(Write(Tex))
