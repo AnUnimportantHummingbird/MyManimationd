@@ -1,9 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:/Users/AIDEN/Documents/GitHub/MyManimations/media/videos/main/720p30/partial_movie_files/ProblemInfo/2016333726_1280228252_223132457.mp4'
-file 'file:/Users/AIDEN/Documents/GitHub/MyManimations/media/videos/main/720p30/partial_movie_files/ProblemInfo/543634251_4109195863_821586149.mp4'
-file 'file:/Users/AIDEN/Documents/GitHub/MyManimations/media/videos/main/720p30/partial_movie_files/ProblemInfo/543634251_1363704939_3954021837.mp4'
-file 'file:/Users/AIDEN/Documents/GitHub/MyManimations/media/videos/main/720p30/partial_movie_files/ProblemInfo/543634251_1310325513_4254228883.mp4'
-file 'file:/Users/AIDEN/Documents/GitHub/MyManimations/media/videos/main/720p30/partial_movie_files/ProblemInfo/543634251_541212586_832822220.mp4'
-file 'file:/Users/AIDEN/Documents/GitHub/MyManimations/media/videos/main/720p30/partial_movie_files/ProblemInfo/543634251_2857228893_3856873436.mp4'
-file 'file:/Users/AIDEN/Documents/GitHub/MyManimations/media/videos/main/720p30/partial_movie_files/ProblemInfo/543634251_3342255957_1883010404.mp4'
-file 'file:/Users/AIDEN/Documents/GitHub/MyManimations/media/videos/main/720p30/partial_movie_files/ProblemInfo/543634251_3042374807_2716619557.mp4'

@@ -89,7 +89,10 @@ class ProblemInfo(Scene):
         ShadedArea = Intersection(A1mob, A2mob, A3mob, A4mob, color = WHITE, fill_opacity = 0.5)
 
         # Problem
-        problem = Tex("Quarter circles are drawn centered at each vertex of square ABCD").to_edge(UP, buff=2)
+        problem = Tex(
+        """Quarter circles are drawn centered at each vertex of square ABCD.
+        \n If AB = 12, then what is the area of the shaded reigon
+        """).to_edge(UP, buff=2).set(height=0.5)
 
 
         self.play(Create(s))
